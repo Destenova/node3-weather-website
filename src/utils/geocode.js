@@ -33,8 +33,8 @@ const forecast = ((longitude, latitude, callback)=>{
         }else if(body.errorCode){
             callback('Unable to find location')
         }else{
-            //callback(undefined,'The temperature is '+body.temp.value+' and the weather is '+body.weather_code.value)
-            callback(undefined,body)
+            callback(undefined,'The temperature is '+body.temp.value+' and the weather is '+body.weather_code.value)
+            //callback(undefined,body)
         }
     })
 })

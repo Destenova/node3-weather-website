@@ -30,7 +30,8 @@ weatherForm.addEventListener('submit', (event) => {
             messageTwo.textContent=''
         }else{
             messageOne.textContent=data.location
-            messageTwo.textContent=data.forecast.temp.value+ ' C°'
+            //messageTwo.textContent=data.forecast.temp.value+ ' C°'
+            messageTwo.textContent=data.forecast
         }
     })
 })
